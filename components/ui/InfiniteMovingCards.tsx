@@ -10,11 +10,7 @@ export const InfiniteMovingCards = ({
   pauseOnHover = true,
   className,
 }: {
-  items: {
-    quote: string;
-    name: string;
-    title: string;
-  }[];
+  items: string[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
@@ -80,15 +76,15 @@ export const InfiniteMovingCards = ({
       <ul
         ref={scrollerRef}
         className={cn(
-          " flex min-w-full shrink-0 gap-16 py-4 w-max flex-nowrap",
+          "flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
           start && "animate-scroll ",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
         {items.map((item, idx) => (
           <li
-            className="w-[90vw] max-w-full relative rounded-2xl border border-b-0 
-            flex-shrink-0 border-slate-800 p-5 md:p-16 md:w-[60vw]"
+            className=" flex flex-col items-center max-w-full relative rounded-2xl 
+            border border-b-0 flex-shrink-0 border-slate-800 py-10 w-72"
             style={{
               background: "rgb(4,7,29)",
               backgroundColor:
@@ -97,28 +93,9 @@ export const InfiniteMovingCards = ({
             key={idx}
           >
             <blockquote>
-              <div
-                aria-hidden="true"
-                className="user-select-none -z-1 pointer-events-none absolute 
-                -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
-              ></div>
-              <span className="relative z-20 text-sm md:text-lg leading-[1.6] text-white font-normal">
-                {item.quote}
-              </span>
-              <div className="relative z-20 mt-6 flex flex-row items-center">
-                <span className="flex flex-col gap-1">
-                  <div className="me-3">
-                    <img src="/profile.svg" alt="profile" />
-                  </div>
-
-                  <div className="flex flex-col gap-1">
-                    <span className=" text-xl leading-[1.6] text-white font-bold">
-                      {item.name}
-                    </span>
-                    <span className=" text-sm leading-[1.6] text-white-200 font-normal">
-                      {item.title}
-                    </span>
-                  </div>
+              <div className="relative z-20 flex flex-row items-center">
+                <span className=" text-xl leading-[1.6] text-white font-bold">
+                  {item}
                 </span>
               </div>
             </blockquote>

@@ -46,11 +46,13 @@ const Footer = () => {
                backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 
                bg-black-200 rounded-lg border border-black-300"
             >
-              <img
-                src={profile.img}
-                alt={`${profile.id}`}
-                className="w-5 h-5"
-              />
+              <a href={profile.link} target="_blank">
+                <img
+                  src={profile.img}
+                  alt={`${profile.id}`}
+                  className="w-5 h-5"
+                />
+              </a>
             </div>
           ))}
         </div>

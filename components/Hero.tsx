@@ -41,7 +41,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Teona, a Next.js Developer based in Georgia.
+            Hi! I&apos;m Teona, a Front-end Developer based in Georgia.
           </p>
 
           <a href="#about">
