@@ -97,11 +97,11 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Nike Landing Page",
+    title: "A Collaborative LiveDocs",
     des: "",
     img: "/p4.svg",
-    iconLists: ["/re.svg", "/tail.svg"],
-    link: "https://nike-six-iota.vercel.app/",
+    iconLists: ["/next.svg", "/tail.svg", "ts.svg"],
+    link: "https://collaborativelivedocs.vercel.app/",
   },
 ];
 
