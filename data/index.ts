@@ -85,7 +85,7 @@ export const projects = [
     des: "The purpose of the visual storytelling game is to show the relationship between images and words.",
     img: "/p2.svg",
     iconLists: ["/re.svg", "/sass.svg", "/fm.svg"],
-    link: "https://visual-storytelling-24-1.vercel.app/home",
+    link: "https://github.com/Mind1a/visual_storytelling_24.1",
   },
   {
     id: 3,
